@@ -19,9 +19,9 @@ public class Fila<T> {
         ocupacao++;
     }
 
-    public T desenfileira()throws Exception{
+    public T desenfileira(){
         if (estaVazio()) {
-            throw new Exception("Fila vazia");
+            throw new FilaVaziaException("Fila vazia");
         }
         T aux = primeiro.getInfo();
         primeiro = primeiro.getProximo();
