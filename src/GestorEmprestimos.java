@@ -12,6 +12,7 @@ public class GestorEmprestimos {
             Fila<Usuario> fila = hmap.get(livro.getIsbn());
             if(fila == null){
                 fila = new Fila<>();
+                hmap.put(livro.getIsbn(), fila);
             }
             fila.enfileira(u);
         }
