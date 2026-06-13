@@ -9,7 +9,7 @@ public class Fila<T> {
     }
 
     public void enfileira(T info){
-        No<T> novo = new No<T>(info);
+        No<T> novo = new No<>(info);
         if (estaVazio()) {
             primeiro = novo;
         }else{
